@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas Barber — Powered by Atlas Valley</title>
+  <meta name="description" content="Atlas Barber — Il barbiere del futuro. Drop-in, booking e servizio a domicilio. Parte dell'ecosistema Atlas Valley." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="nav-logo">⚡</span>
+      <span class="nav-title">ATLAS <span class="accent">BARBER</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Chi Siamo</a></li>
+      <li><a href="#services">Servizi</a></li>
+      <li><a href="#dropin">Drop-In</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#domicilio">A Domicilio</a></li>
+      <li><a href="#contact">Contatti</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobile()">Home</a></li>
+      <li><a href="#about" onclick="closeMobile()">Chi Siamo</a></li>
+      <li><a href="#services" onclick="closeMobile()">Servizi</a></li>
+      <li><a href="#dropin" onclick="closeMobile()">Drop-In</a></li>
+      <li><a href="#booking" onclick="closeMobile()">Booking</a></li>
+      <li><a href="#domicilio" onclick="closeMobile()">A Domicilio</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contatti</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-scanlines"></div>
+    <div class="hero-content">
+      <div class="hero-badge">PARTE DELL'ECOSISTEMA ATLAS VALLEY</div>
+      <h1 class="hero-title">
+        ATLAS<br/><span class="hero-accent">BARBER</span>
+      </h1>
+      <p class="hero-tagline">Il Barbiere del Futuro.<br/>Tradizione affilata dalla tecnologia.</p>
+      <div class="hero-cta">
+        <a href="#booking" class="btn-primary">📅 Prenota Ora</a>
+        <a href="#dropin" class="btn-secondary">🚶 Drop-In</a>
+        <a href="#domicilio" class="btn-outline">🏠 A Domicilio</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Stile</span></div>
+        <div class="stat-divider">|</div>
+        <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Prenotazioni</span></div>
+        <div class="stat-divider">|</div>
+        <div class="stat"><span class="stat-num">0</span><span class="stat-label">Compromessi</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-tag">// CHI SIAMO</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Dove la Lama<br/><em>incontra il Futuro</em></h2>
+          <p>Atlas Barber nasce dall'ecosistema <strong>Atlas Valley</strong> — la stessa visione di eccellenza, innovazione e comunità applicata all'arte della barberia. Non siamo solo un barbiere. Siamo un'esperienza.</p>
+          <p>Ogni taglio è ingegneria di precisione. Ogni cliente è parte della nostra rete globale. La tecnologia ci permette di essere sempre disponibili, sempre pronti, sempre al vertice.</p>
+          <div class="about-badges">
+            <span class="badge">⚡ AI-Powered Booking</span>
+            <span class="badge">🌍 Atlas Valley Network</span>
+            <span class="badge">✂️ Master Barbers</span>
+            <span class="badge">🏠 Servizio a Domicilio</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="visual-box">
+            <div class="vb-inner">
+              <div class="vb-icon">✂️</div>
+              <div class="vb-text">
+                <span class="vb-big">Atlas Barber</span>
+                <span class="vb-sub">Nuovo Locale · Drop-In · Booking · Domicilio</span>
+              </div>
+            </div>
+            <div class="vb-lines">
+              <div class="vb-line"></div>
+              <div class="vb-line"></div>
+              <div class="vb-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-tag">// SERVIZI</div>
+      <h2 class="section-title">Il Nostro <em>Arsenale</em></h2>
+      <div class="services-grid">
+        <div class="service-card" data-delay="0">
+          <div class="sc-icon">✂️</div>
+          <h3>Taglio Uomo</h3>
+          <p>Taglio classico o moderno, adattato alla tua morfologia e al tuo stile. Precisione al millimetro.</p>
+          <div class="sc-tag">SIGNATURE</div>
+        </div>
+        <div class="service-card" data-delay="1">
+          <div class="sc-icon">🪒</div>
+          <h3>Rasatura & Barba</h3>
+          <p>Rasatura tradizionale con rasoio a mano libera, modellatura barba e cura del viso di alta precisione.</p>
+          <div class="sc-tag">PREMIUM</div>
+        </div>
+        <div class="service-card" data-delay="2">
+          <div class="sc-icon">👑</div>
+          <h3>Trattamento Completo</h3>
+          <p>L'esperienza Atlas totale: taglio + barba + trattamento cuoio capelluto + finishing professionale.</p>
+          <div class="sc-tag">ATLAS ELITE</div>
+        </div>
+        <div class="service-card" data-delay="3">
+          <div class="sc-icon">🧴</div>
+          <h3>Trattamenti Capillari</h3>
+          <p>Trattamenti idratanti, rigeneranti e tonificanti per capelli e barba. Prodotti selezionati.</p>
+          <div class="sc-tag">WELLNESS</div>
+        </div>
+        <div class="service-card" data-delay="4">
+          <div class="sc-icon">🎨</div>
+          <h3>Colorazione</h3>
+          <p>Colore, schiariture, sfumature: trasformazioni radicali o ritocchi naturali, sempre con precisione.</p>
+          <div class="sc-tag">CREATIVE</div>
+        </div>
+        <div class="service-card" data-delay="5">
+          <div class="sc-icon">🏠</div>
+          <h3>Servizio a Domicilio</h3>
+          <p>Tutti i nostri servizi direttamente a casa tua. Il lusso della barberia senza uscire di casa.</p>
+          <div class="sc-tag">HOME</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DROP-IN -->
+  <section id="dropin" class="section dropin-section">
+    <div class="container">
+      <div class="section-tag">// DROP-IN</div>
+      <div class="dropin-grid">
+        <div class="dropin-info">
+          <h2 class="section-title">Vieni quando <em>vuoi.</em><br/>Nessuna attesa inutile.</h2>
+          <p>Il drop-in di Atlas Barber è pensato per chi vive di corsa ma non vuole rinunciare alla qualità. Entra, siediti, esci nuovo.</p>
+
+          <div class="dropin-details">
+            <div class="dd-item">
+              <span class="dd-icon">📍</span>
+              <div class="dd-content">
+                <span class="dd-label">Indirizzo</span>
+                <!-- COMPILA QUI L'INDIRIZZO -->
+                <span class="dd-value" id="dropin-address">[INSERIRE INDIRIZZO DEL LOCALE]</span>
+              </div>
+            </div>
+            <div class="dd-item">
+              <span class="dd-icon">🕐</span>
+              <div class="dd-content">
+                <span class="dd-label">Orari</span>
+                <span class="dd-value">Lun–Sab: 09:00–20:00<br/>Dom: 10:00–16:00</span>
+              </div>
+            </div>
+            <div class="dd-item">
+              <span class="dd-icon">⚡</span>
+              <div class="dd-content">
+                <span class="dd-label">Modalità</span>
+                <span class="dd-value">Primo arrivato, primo servito.<br/>Nessuna prenotazione richiesta.</span>
+              </div>
+            </div>
+            <div class="dd-item">
+              <span class="dd-icon">💳</span>
+              <div class="dd-content">
+                <span class="dd-label">Pagamenti</span>
+                <span class="dd-value">Contanti · Carta · Bancomat</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://maps.google.com" target="_blank" class="btn-primary" id="maps-link">🗺️ Aprire in Maps</a>
+        </div>
+
+        <div class="dropin-map-box">
+          <div class="map-placeholder">
+            <div class="map-icon">📍</div>
+            <p>Atlas Barber</p>
+            <span>[Indirizzo da inserire]</span>
+            <div class="map-ping"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="section booking-section">
+    <div class="container">
+      <div class="section-tag">// BOOKING</div>
+      <h2 class="section-title">Prenota il Tuo <em>Slot</em></h2>
+      <p class="section-subtitle">Scegli data, orario e servizio. La tua richiesta arriva direttamente al team Atlas Barber in tempo reale.</p>
+
+      <div class="form-container booking-form-container">
+        <div class="form-header">
+          <span class="form-icon">📅</span>
+          <h3>Prenotazione in Locale</h3>
+          <p>Riceverai conferma via messaggio o email</p>
+        </div>
+
+        <form id="bookingForm" class="atlas-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="b-name">Nome e Cognome *</label>
+              <input type="text" id="b-name" name="name" placeholder="Es. Marco Rossi" required />
+            </div>
+            <div class="form-group">
+              <label for="b-phone">Telefono *</label>
+              <input type="tel" id="b-phone" name="phone" placeholder="+39 000 000 0000" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="b-email">Email</label>
+              <input type="email" id="b-email" name="email" placeholder="la@tua.email" />
+            </div>
+            <div class="form-group">
+              <label for="b-service">Servizio Richiesto *</label>
+              <select id="b-service" name="service" required>
+                <option value="" disabled selected>Scegli un servizio...</option>
+                <option value="Taglio Uomo">✂️ Taglio Uomo</option>
+                <option value="Rasatura & Barba">🪒 Rasatura & Barba</option>
+                <option value="Taglio + Barba">✂️🪒 Taglio + Barba</option>
+                <option value="Trattamento Completo Atlas Elite">👑 Trattamento Completo Atlas Elite</option>
+                <option value="Trattamento Capillare">🧴 Trattamento Capillare</option>
+                <option value="Colorazione">🎨 Colorazione</option>
+                <option value="Altro">📝 Altro (specificare nelle note)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="b-date">Data Preferita *</label>
+              <input type="date" id="b-date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="b-time">Orario Preferito *</label>
+              <select id="b-time" name="time" required>
+                <option value="" disabled selected>Scegli un orario...</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="b-barber">Barbiere Preferito</label>
+            <select id="b-barber" name="barber">
+              <option value="Nessuna preferenza">Nessuna preferenza</option>
+              <option value="panthera_leo">panthera_leo</option>
+              <option value="elf_wizard">elf_wizard</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="b-notes">Note Aggiuntive</label>
+            <textarea id="b-notes" name="notes" rows="3" placeholder="Stile desiderato, allergie, preferenze particolari..."></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-primary btn-full" id="bookingSubmitBtn">
+              <span class="btn-text">📅 Invia Prenotazione</span>
+              <span class="btn-loading" style="display:none;">⏳ Invio in corso...</span>
+            </button>
+          </div>
+
+          <div id="booking-status" class="form-status" style="display:none;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMICILIO -->
+  <section id="domicilio" class="section domicilio-section">
+    <div class="container">
+      <div class="section-tag">// SERVIZIO A DOMICILIO</div>
+      <h2 class="section-title">Il Barbiere <em>da te.</em></h2>
+      <p class="section-subtitle">Nessuno stress, nessuno spostamento. Il nostro team porta l'intera esperienza Atlas Barber direttamente a casa tua, in ufficio, o dove preferisci.</p>
+
+      <div class="domicilio-features">
+        <div class="df-item">
+          <span>🚗</span>
+          <p>Veniamo da te</p>
+        </div>
+        <div class="df-item">
+          <span>🧰</span>
+          <p>Attrezzatura completa</p>
+        </div>
+        <div class="df-item">
+          <span>📍</span>
+          <p>Città e dintorni</p>
+        </div>
+        <div class="df-item">
+          <span>📞</span>
+          <p>Conferma diretta</p>
+        </div>
+      </div>
+
+      <div class="form-container domicilio-form-container">
+        <div class="form-header">
+          <span class="form-icon">🏠</span>
+          <h3>Richiedi Servizio a Domicilio</h3>
+          <p>Il team ti contatterà per confermare disponibilità e dettagli</p>
+        </div>
+
+        <form id="domicilioForm" class="atlas-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="d-name">Nome e Cognome *</label>
+              <input type="text" id="d-name" name="name" placeholder="Es. Marco Rossi" required />
+            </div>
+            <div class="form-group">
+              <label for="d-phone">Telefono *</label>
+              <input type="tel" id="d-phone" name="phone" placeholder="+39 000 000 0000" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="d-email">Email</label>
+              <input type="email" id="d-email" name="email" placeholder="la@tua.email" />
+            </div>
+            <div class="form-group">
+              <label for="d-service">Servizio Richiesto *</label>
+              <select id="d-service" name="service" required>
+                <option value="" disabled selected>Scegli un servizio...</option>
+                <option value="Taglio Uomo a Domicilio">✂️ Taglio Uomo</option>
+                <option value="Rasatura & Barba a Domicilio">🪒 Rasatura & Barba</option>
+                <option value="Taglio + Barba a Domicilio">✂️🪒 Taglio + Barba</option>
+                <option value="Trattamento Completo a Domicilio">👑 Trattamento Completo</option>
+                <option value="Colorazione a Domicilio">🎨 Colorazione</option>
+                <option value="Pacchetto Gruppo (2+ persone)">👥 Pacchetto Gruppo (2+ persone)</option>
+                <option value="Evento Speciale / Matrimonio">💍 Evento Speciale / Matrimonio</option>
+                <option value="Altro">📝 Altro (specificare)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="d-address">Indirizzo del Servizio *</label>
+            <input type="text" id="d-address" name="address" placeholder="Via, numero civico, città, CAP" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="d-date">Data Preferita *</label>
+              <input type="date" id="d-date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="d-time">Fascia Oraria *</label>
+              <select id="d-time" name="time" required>
+                <option value="" disabled selected>Scegli una fascia...</option>
+                <option value="Mattina (09:00–12:00)">🌅 Mattina (09:00–12:00)</option>
+                <option value="Mezzogiorno (12:00–14:00)">☀️ Mezzogiorno (12:00–14:00)</option>
+                <option value="Pomeriggio (14:00–17:00)">🌤️ Pomeriggio (14:00–17:00)</option>
+                <option value="Tardo pomeriggio (17:00–20:00)">🌆 Tardo pomeriggio (17:00–20:00)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="d-people">Numero di Persone *</label>
+              <select id="d-people" name="people" required>
+                <option value="1">1 persona</option>
+                <option value="2">2 persone</option>
+                <option value="3">3 persone</option>
+                <option value="4+">4+ persone</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="d-location-type">Tipo di Luogo</label>
+              <select id="d-location-type" name="location_type">
+                <option value="Casa privata">🏠 Casa privata</option>
+                <option value="Ufficio / Azienda">🏢 Ufficio / Azienda</option>
+                <option value="Hotel">🏨 Hotel</option>
+                <option value="Evento / Location">🎪 Evento / Location</option>
+                <option value="Altro">📍 Altro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="d-notes">Note Aggiuntive e Richieste Speciali</label>
+            <textarea id="d-notes" name="notes" rows="3" placeholder="Accesso, citofono, stile desiderato, esigenze particolari, note per il team..."></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-primary btn-full btn-gold" id="domicilioSubmitBtn">
+              <span class="btn-text">🏠 Richiedi Servizio a Domicilio</span>
+              <span class="btn-loading" style="display:none;">⏳ Invio in corso...</span>
+            </button>
+          </div>
+
+          <div id="domicilio-status" class="form-status" style="display:none;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-tag">// CONTATTI</div>
+      <h2 class="section-title">Resta in <em>Contatto</em></h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="cc-icon">📍</span>
+          <h4>Dove Trovarci</h4>
+          <p id="contact-address">[INSERIRE INDIRIZZO DEL LOCALE]</p>
+        </div>
+        <div class="contact-card">
+          <span class="cc-icon">📞</span>
+          <h4>Telefono</h4>
+          <p>+46 76 450 2915</p>
+        </div>
+        <div class="contact-card">
+          <span class="cc-icon">📧</span>
+          <h4>Email</h4>
+          <p>atlasviking.98@gmail.com</p>
+        </div>
+        <div class="contact-card">
+          <span class="cc-icon">🌐</span>
+          <h4>Atlas Valley Network</h4>
+          <p><a href="https://pantheraleo-atlasvalley.github.io" target="_blank">pantheraleo-atlasvalley.github.io</a></p>
+        </div>
+      </div>
+
+      <div class="social-row">
+        <a href="https://x.com/atlasvalley123" target="_blank" class="social-link">𝕏 Twitter</a>
+        <a href="https://t.me/atlasvalley" target="_blank" class="social-link">✈️ Telegram</a>
+        <a href="https://instagram.com/atlasvalley123" target="_blank" class="social-link">📸 Instagram</a>
+        <a href="https://discord.gg/UH3Tvjdwyu" target="_blank" class="social-link">🎮 Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="nav-logo">⚡</span>
+        <span>ATLAS BARBER</span>
+      </div>
+      <p class="footer-sub">Parte dell'ecosistema <a href="https://pantheraleo-atlasvalley.github.io" target="_blank">Atlas Valley</a> · Powered by panthera_leo &amp; elf_wizard</p>
+      <p class="footer-copy">© 2024 Atlas Barber · Atlas Valley. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
